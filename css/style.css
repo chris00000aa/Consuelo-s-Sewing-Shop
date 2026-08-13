@@ -1,0 +1,418 @@
+/* ========================================
+   MOM'S SEWING SHOP - ESTILOS GLOBALES
+   ======================================== */
+
+/* PALETA DE COLORES */
+:root {
+    --color-primary: #D4939A;      /* Rosa cálido */
+    --color-secondary: #8B7355;    /* Marrón suave */
+    --color-bg: #F5E6E8;           /* Fondo crema */
+    --color-text: #3A3A3A;         /* Texto oscuro */
+    --color-light: #E8E8E8;        /* Gris claro */
+    --color-white: #ffffff;        /* Blanco */
+    --color-dark: #3A3A3A;         /* Oscuro */
+}
+
+/* RESET Y ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* TIPOGRAFÍA */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ========================================
+   HEADER Y NAVEGACIÓN
+   ======================================== */
+
+.header {
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+.nav ul {
+    display: none;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 1.5rem;
+}
+
+.nav ul li a {
+    color: var(--color-text);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: var(--color-primary);
+}
+
+/* ========================================
+   BOTONES
+   ======================================== */
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 2px solid var(--color-white);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-secondary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: 2px solid var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+
+.hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary) 100%);
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero p {
+    font-size: 15px;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================
+   SERVICIOS SECTION
+   ======================================== */
+
+.servicios {
+    background-color: var(--color-white);
+    padding: 2rem 1rem;
+}
+
+.servicios h2 {
+    text-align: center;
+    color: var(--color-secondary);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicio-card {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.servicio-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-secondary);
+}
+
+.card-icon {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.servicio-card h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.75rem;
+}
+
+.servicio-card p {
+    font-size: 14px;
+    color: var(--color-text);
+}
+
+/* ========================================
+   GALERÍA SECTION
+   ======================================== */
+
+.galeria {
+    background-color: var(--color-white);
+    padding: 2rem 1rem;
+}
+
+.galeria h2 {
+    text-align: center;
+    color: var(--color-secondary);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-item {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.galeria-image {
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 0.75rem;
+}
+
+.galeria-item p {
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+
+.cta {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--color-white);
+    font-size: 24px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin-bottom: 0.5rem;
+    font-size: 13px;
+}
+
+.footer-content a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET (768px+)
+   ======================================== */
+
+@media (min-width: 768px) {
+    /* Header - Mostrar navegación */
+    .nav ul {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    /* Servicios - 2 columnas */
+    .servicios-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Galería - 2 columnas */
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .galeria-image {
+        height: 180px;
+    }
+}
+
+/* ========================================
+   RESPONSIVE - DESKTOP (1024px+)
+   ======================================== */
+
+@media (min-width: 1024px) {
+    /* Servicios - 3 columnas */
+    .servicios-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Hero */
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+    }
+
+    /* Galería sigue en 2 columnas */
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ========================================
+   ACCESIBILIDAD
+   ======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
