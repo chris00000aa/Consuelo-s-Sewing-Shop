@@ -86,6 +86,26 @@ a {
 .nav ul {
     display: none;
     list-style: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-primary);
+    padding: 1rem;
+}
+
+.nav.active ul {
+    display: flex;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--color-primary);
 }
 
 .nav ul li {
@@ -351,8 +371,16 @@ a {
 @media (min-width: 768px) {
     /* Header - Mostrar navegación */
     .nav ul {
-        display: flex;
-    }
+    display: flex;
+    position: static;
+    flex-direction: row;
+    border: none;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none;
+}
 
     /* Hero */
     .hero {
