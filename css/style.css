@@ -557,3 +557,40 @@ a {
         transition-duration: 0.01ms !important;
     }
 }
+/* ========================================
+   SCROLL REVEAL (animación al hacer scroll)
+   ======================================== */
+
+/* Por defecto, todo visible (por si JS no carga) */
+.servicio-card,
+.galeria-item,
+.cta,
+.acerca-de,
+.contacto-info,
+.politica-item {
+    opacity: 1;
+    transform: none;
+}
+
+/* Solo si JavaScript confirmó que está activo, ocultamos para animar */
+body.js-ready .servicio-card,
+body.js-ready .galeria-item,
+body.js-ready .cta,
+body.js-ready .acerca-de,
+body.js-ready .contacto-info,
+body.js-ready .politica-item {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Cuando el elemento entra en pantalla, JS le agrega esta clase */
+body.js-ready .servicio-card.visible,
+body.js-ready .galeria-item.visible,
+body.js-ready .cta.visible,
+body.js-ready .acerca-de.visible,
+body.js-ready .contacto-info.visible,
+body.js-ready .politica-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
