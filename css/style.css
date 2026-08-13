@@ -190,7 +190,26 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+/* ========================================
+   PAGE HEADER (para páginas internas)
+   ======================================== */
 
+.page-header {
+    background-color: var(--color-primary);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.page-header h2 {
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.95);
+}
 /* ========================================
    SERVICIOS SECTION
    ======================================== */
@@ -244,7 +263,26 @@ a {
     font-size: 14px;
     color: var(--color-text);
 }
+/* Versión compacta (solo en Home) */
+.servicio-card-compact {
+    padding: 1.25rem 1rem;
+}
 
+.servicio-card-compact h3 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.servicios-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+.precio {
+    font-size: 12px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
 /* ========================================
    GALERÍA SECTION
    ======================================== */
