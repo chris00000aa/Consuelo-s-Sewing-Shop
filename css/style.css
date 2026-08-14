@@ -325,6 +325,7 @@ a {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: start;
 }
 
 .galeria-item {
@@ -337,12 +338,10 @@ a {
 
 .galeria-image {
     width: 100%;
-    height: 260px;
-    object-fit: contain;
-    background-color: #ffffff;
+    height: auto;
+    display: block;
     border-radius: 4px;
     margin-bottom: 0.75rem;
-    display: block;
 }
 .galeria-item p {
     text-align: center;
