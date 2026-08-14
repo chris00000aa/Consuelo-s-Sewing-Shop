@@ -337,7 +337,7 @@ a {
 
 .galeria-image {
     width: 100%;
-    height: 220px;
+    height: 260px;
     object-fit: contain;
     background-color: #ffffff;
     border-radius: 4px;
@@ -516,7 +516,7 @@ a {
     }
 
     .galeria-image {
-        height: 180px;
+        height: 320px;
     }
 }
 
