@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -sL \"https://tse3.mm.bing.net/th/id/OIP.hCekd9W3Su-VqY4h1bqo2gHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3\" -o \"img/servicio_cierre_raw.jpg\" -A \"Mozilla/5.0\")",
+      "Bash(python -c ' *)",
+      "Bash(rm img/servicio_cierre_raw.jpg)"
+    ]
+  }
+}
